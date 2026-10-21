@@ -1,0 +1,3 @@
+,n_seeds,naive_rate,gated_rate,best_is_genuine_rate,median_best_t,median_spa_p,median_effective_trials
+best_of_10_noise,100.0,0.24,0.01,0.0,1.695218092311268,0.416,10.0
+best_of_10_one_genuine,100.0,0.99,0.87,1.0,4.430018500173308,0.0,10.0

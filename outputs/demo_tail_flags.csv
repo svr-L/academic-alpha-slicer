@@ -1,0 +1,4 @@
+flag,statistic,threshold,rule,coef,fired
+short_convexity_tm,,-2.0,t <= threshold,,False
+excess_left_tail_beta,0.08469652145672031,2.0,t >= threshold,0.0011159610164046877,False
+left_tail_asymmetry,0.9827895380861111,1.5,ratio >= threshold,,False

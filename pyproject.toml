@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "academic-alpha-slicer"
+version = "0.5.0"
+description = "Decompose apparent alpha into priced premia and a core, audit inference robustness, and trace alpha survival across expanding pre-declared factor spans."
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "pandas>=2.0", "scipy>=1.11", "statsmodels>=0.14", "matplotlib>=3.8"]
+
+[tool.setuptools.packages.find]
+include = ["alpha_slicer*"]
