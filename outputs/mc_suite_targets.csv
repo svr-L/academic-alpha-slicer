@@ -1,0 +1,71 @@
+case,set,metric,target,value,pass,why
+noise,v0.2-v0.3,candidate_rate,<= 0.06,0.02,True,false core certification near the nominal one-sided 2.3%
+noise,v0.2-v0.3,abs_median_bias,<= 0.0075,0.000334860509085554,True,unbiased core
+noise,v0.2-v0.3,coverage95,>= 0.85,0.97,True,HAC intervals roughly honest
+noise,v0.2-v0.3,flag_rate,<= 0.15,0.04,True,tail flags rarely fire on symmetric noise
+noise,v0.2-v0.3,max_addup_error,<= 1e-08,1.3877787807814457e-17,True,Shapley contributions + core add up to the raw mean
+noise,v0.2-v0.3,max_core_returns_error,<= 1e-08,6.767850169175915e-14,True,core return series has mean = core alpha
+actuarial_short_variance,v0.2-v0.3,abs_median_bias,<= 0.01,0.0007958446651231707,True,non-traded convexity is not alpha (v0.1: +19%/yr)
+actuarial_short_variance,v0.2-v0.3,candidate_rate,<= 0.06,0.01,True,no certification of a short-vol payoff
+actuarial_short_variance,v0.2-v0.3,coverage95,>= 0.85,0.99,True,HAC intervals roughly honest
+actuarial_short_variance,v0.2-v0.3,flag_rate,>= 0.8,1.0,True,short convexity is flagged as unpriced tail risk
+actuarial_short_variance,v0.2-v0.3,max_addup_error,<= 1e-08,1.3877787807814457e-17,True,Shapley contributions + core add up to the raw mean
+actuarial_short_variance,v0.2-v0.3,max_core_returns_error,<= 1e-08,1.4747231213974032e-13,True,core return series has mean = core alpha
+actuarial_short_variance,v0.4b,coverage95_population,>= 0.85,0.99,True,decision interval covers the population alpha
+actuarial_short_put,v0.2-v0.3,abs_median_bias,<= 0.01,0.009053128035403715,True,put selling is not alpha (v0.1: +188%/yr)
+actuarial_short_put,v0.2-v0.3,candidate_rate,<= 0.06,0.0,True,no certification of a short-put payoff
+actuarial_short_put,v0.2-v0.3,coverage95,>= 0.85,1.0,True,HAC intervals roughly honest
+actuarial_short_put,v0.2-v0.3,flag_rate,>= 0.8,1.0,True,short-put exposure is flagged as unpriced tail risk
+actuarial_short_put,v0.2-v0.3,max_addup_error,<= 1e-08,3.469446951953614e-17,True,Shapley contributions + core add up to the raw mean
+actuarial_short_put,v0.2-v0.3,max_core_returns_error,<= 1e-08,3.880770704789427e-12,True,core return series has mean = core alpha
+actuarial_short_put,v0.4b,coverage95_population,>= 0.85,0.99,True,decision interval covers the population alpha
+peso_short_put,v0.2-v0.3,flag_rate,>= 0.8,1.0,True,regime-luck put selling is handed to the H2 gate
+peso_short_put,v0.2-v0.3,clean_candidate_rate,<= 0.1,0.0,True,never a clean certification of put selling
+peso_short_put,v0.2-v0.3,max_addup_error,<= 1e-08,2.7755575615628914e-17,True,Shapley contributions + core add up to the raw mean
+peso_short_put,v0.2-v0.3,max_core_returns_error,<= 1e-08,3.881228671787085e-12,True,core return series has mean = core alpha
+peso_short_put,v0.4b,coverage95_population,>= 0.85,0.92,True,rare-crash put: interval covers the population alpha (v0.3 statistic ~15%)
+peso_short_put,v0.4b,candidate_rate,<= 0.05,0.02,True,"rare-crash put is almost never a candidate, flagged or not (v0.3: 16%)"
+timing_skill,v0.2-v0.3,candidate_rate,>= 0.9,1.0,True,timing skill is alpha and is detected (v0.1: -14%/yr)
+timing_skill,v0.2-v0.3,median_ratio_to_truth,>= 0.75,0.9989111125566854,True,core close to the timing term
+timing_skill,v0.2-v0.3,median_ratio_to_truth,<= 1.25,0.9989111125566854,True,core close to the timing term
+timing_skill,v0.2-v0.3,flag_rate,<= 0.15,0.0,True,convex payoffs do not raise tail flags
+timing_skill,v0.2-v0.3,max_addup_error,<= 1e-08,0.0,True,Shapley contributions + core add up to the raw mean
+timing_skill,v0.2-v0.3,max_core_returns_error,<= 1e-08,7.152056724635258e-13,True,core return series has mean = core alpha
+regime_alpha,v0.2-v0.3,median_alpha_on,>= 0.06,0.0825150889461266,True,regime alpha recovered (truth 8%)
+regime_alpha,v0.2-v0.3,median_alpha_on,<= 0.1,0.0825150889461266,True,regime alpha recovered (truth 8%)
+regime_alpha,v0.2-v0.3,abs_median_alpha_off,<= 0.015,0.00021553214325566536,True,no alpha off-regime (truth 0)
+regime_alpha,v0.2-v0.3,diff_sig_rate,>= 0.6,0.85,True,on-minus-off detected (power)
+regime_alpha,v0.2-v0.3,coverage95,>= 0.85,0.98,True,unconditional core = 8% x share of high-vol days
+regime_alpha,v0.2-v0.3,max_addup_error,<= 1e-08,1.3877787807814457e-17,True,Shapley contributions + core add up to the raw mean
+regime_alpha,v0.2-v0.3,max_core_returns_error,<= 1e-08,7.870093465811578e-14,True,core return series has mean = core alpha
+regime_alpha,v0.4b,candidate_rate,>= 0.65,0.74,True,power kept on genuine regime alpha (v0.3: 80%; expected ~75% at the fixed-b threshold)
+crash_premium_unpriced,v0.2-v0.3,flag_rate,>= 0.9,1.0,True,an unpriceable crash premium is handed to the H2 gate
+crash_premium_unpriced,v0.2-v0.3,clean_candidate_rate,<= 0.1,0.0,True,never a clean certification of a crash premium
+crash_premium_unpriced,v0.2-v0.3,max_addup_error,<= 1e-08,0.0,True,Shapley contributions + core add up to the raw mean
+crash_premium_unpriced,v0.2-v0.3,max_core_returns_error,<= 1e-08,1.772054725179828e-13,True,core return series has mean = core alpha
+crash_premium_unpriced,v0.4b,coverage95_population,>= 0.85,0.95,True,decision interval covers the population alpha
+crash_premium_traded,v0.2-v0.3,candidate_rate,<= 0.06,0.02,True,a priced crash premium is not alpha
+crash_premium_traded,v0.2-v0.3,tail_dominated_share,>= 0.8,0.98,True,the traded tail block explains the mean
+crash_premium_traded,v0.2-v0.3,abs_median_bias,<= 0.01,0.0006742072825975392,True,core ~ 0 once the premium is priced
+crash_premium_traded,v0.2-v0.3,flag_rate,<= 0.15,0.05,True,priced tail risk does not raise unpriced-risk flags
+crash_premium_traded,v0.2-v0.3,max_addup_error,<= 1e-08,2.7755575615628914e-17,True,Shapley contributions + core add up to the raw mean
+crash_premium_traded,v0.2-v0.3,max_core_returns_error,<= 1e-08,1.734289795107813e-13,True,core return series has mean = core alpha
+vrp_short_variance_unpriced,v0.2-v0.3,flag_rate,>= 0.8,1.0,True,an unpriceable variance premium is handed to the H2 gate
+vrp_short_variance_unpriced,v0.2-v0.3,clean_candidate_rate,<= 0.1,0.0,True,never a clean certification of a variance premium
+vrp_short_variance_unpriced,v0.2-v0.3,max_addup_error,<= 1e-08,3.469446951953614e-18,True,Shapley contributions + core add up to the raw mean
+vrp_short_variance_unpriced,v0.2-v0.3,max_core_returns_error,<= 1e-08,1.474376176702208e-13,True,core return series has mean = core alpha
+vrp_short_variance_unpriced,v0.4b,coverage95_population,>= 0.85,0.98,True,decision interval covers the population alpha
+vrp_short_variance_traded,v0.2-v0.3,candidate_rate,<= 0.06,0.02,True,a priced variance premium is not alpha
+vrp_short_variance_traded,v0.2-v0.3,abs_median_bias,<= 0.01,0.00019283474980017078,True,core ~ 0 once the VRP is priced by a traded swap
+vrp_short_variance_traded,v0.2-v0.3,tail_dominated_share,>= 0.8,0.72,False,the traded tail block explains the mean
+vrp_short_variance_traded,v0.2-v0.3,flag_rate,<= 0.15,0.01,True,priced convexity does not raise unpriced-risk flags
+vrp_short_variance_traded,v0.2-v0.3,max_addup_error,<= 1e-08,2.7755575615628914e-17,True,Shapley contributions + core add up to the raw mean
+vrp_short_variance_traded,v0.2-v0.3,max_core_returns_error,<= 1e-08,7.815015995449315e-14,True,core return series has mean = core alpha
+demo_known_truth,v0.2-v0.3,abs_median_bias,<= 0.01,0.0002845115649350513,True,net core 1%/yr recovered with all blocks active
+demo_known_truth,v0.2-v0.3,coverage95,>= 0.85,1.0,True,HAC intervals roughly honest
+demo_known_truth,v0.2-v0.3,flag_rate,<= 0.15,0.01,True,long convexity + traded tail factors: no unpriced flag
+demo_known_truth,v0.2-v0.3,max_addup_error,<= 1e-08,1.3877787807814457e-17,True,Shapley contributions + core add up to the raw mean
+demo_known_truth,v0.2-v0.3,max_core_returns_error,<= 1e-08,9.353455510119346e-14,True,core return series has mean = core alpha
+best_of_10_noise,v0.3 luck,gated_rate,<= 0.06,0.01,True,reporting the best of 10 zero-alpha variants is not certified (naive t>=2 is not reported as a target)
+best_of_10_one_genuine,v0.3 luck,gated_rate,>= 0.8,0.87,True,a 6%/yr core (t ~ 4) among 10 variants still clears the gate
+best_of_10_one_genuine,v0.3 luck,best_is_genuine_rate,>= 0.9,1.0,True,the best core is the genuine variant

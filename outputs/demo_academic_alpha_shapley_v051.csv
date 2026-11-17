@@ -1,0 +1,5 @@
+component,contribution_ann,min_order_contribution_ann,max_order_contribution_ann,interpretation,share_of_reference_alpha
+additional_linear,0.004090405925559723,0.0032088875483779504,0.005036855301413533,"part of original academic alpha, explained by expanded traded span",0.578788763292816
+conditional,0.011876966910740784,0.01113988451593587,0.012678980304217735,"part of original academic alpha, explained by expanded traded span",1.6805801465771877
+tail,-0.018036347571545975,-0.01855767700459678,-0.01754748363783119,"part of original academic alpha, explained by expanded traded span",-2.552126975961682
+unexplained_after_expansion,0.00913615741911236,0.00913615741911236,0.00913615741911236,remaining intercept; neither automatically genuine alpha nor skill,1.2927580660916784

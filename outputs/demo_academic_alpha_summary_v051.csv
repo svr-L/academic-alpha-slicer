@@ -1,0 +1,13 @@
+,0
+academic_reference_factors,MKT
+academic_reference_alpha_ann,0.007067182683866892
+academic_reference_alpha_t,0.29022609921341014
+academic_reference_alpha_se_ann,0.024350610448270627
+academic_reference_alpha_p_approx,0.7851364451740306
+academic_reference_alpha_ci_low_ann,-0.043739199609839574
+academic_reference_alpha_ci_high_ann,0.05787356497757336
+academic_expanded_alpha_ann,0.00913615741911236
+academic_attributed_mechanisms_ann,-0.002068974735245468
+academic_additivity_error_ann,1.734723475976807e-18
+skill_inference,none: explaining alpha does not reject skill
+nontraded_premia,unidentified unless supplied as independently priced factors

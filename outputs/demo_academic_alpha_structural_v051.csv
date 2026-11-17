@@ -1,0 +1,6 @@
+component,contribution_ann,interpretation
+reference_beta_reallocation,-0.009225707284196184,"change in original benchmark betas, not a separate premium"
+additional_linear,0.010884401854616088,full-model slope x mean of newly added traded payoff
+conditional,0.009480425957008324,full-model slope x mean of newly added traded payoff
+tail,-0.013208095262673284,full-model slope x mean of newly added traded payoff
+unexplained_after_expansion,0.00913615741911236,intercept of expanded traded model

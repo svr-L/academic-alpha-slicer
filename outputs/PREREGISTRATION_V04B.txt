@@ -1,0 +1,10 @@
+v0.4b pre-registration record
+written: 2026-10-19T16:44:11Z, before any run on evaluation seeds 1000-1099
+targets: alpha_slicer/montecarlo.py TARGETS_V04B (plus unchanged TARGETS, LUCK_TARGETS); alpha_slicer/inference_validation.py BOOTSTRAP_TARGETS
+sha256 of the files holding them at that moment:
+7151283de6b2bec1abaf104e3815dd09e2e4901a27f02b4fc1b8806056c6bd89  alpha_slicer/montecarlo.py
+18a8b9b0657bfa4fdabeb01b8f3a29f4dc13616abe2cdeee1150798e4e2de7cc  alpha_slicer/inference_validation.py
+b9a323e8fd611753ce0b363bf307fd87c6e7d97df32bc32035bc42cb755b4794  alpha_slicer/decomposition.py
+2267843879c98b62627c8a3a4483994d822f67dde6ea2d77b43f692b4c0db85c  alpha_slicer/inference.py
+bf56dbf2232ad96d7e8cdc2b0adff13e925ad5e4ab8bef7fbad42551e7114168  alpha_slicer/config.py
+4ea959704975e3cafb439eb0223f2c16494eae7b17cf93499847b5ec6d0bee2a  alpha_slicer/regression.py

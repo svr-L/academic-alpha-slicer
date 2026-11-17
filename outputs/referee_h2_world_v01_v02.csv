@@ -1,0 +1,3 @@
+version,raw_median,core_no_factor_median,certified_clean_no_factor,flagged_no_factor,core_with_crash_factor_median,certified_with_factor,tail_dominated_with_factor
+v0.1,0.1526406201241661,0.4252180847706949,0.75,0.0,-0.13023218265853764,0.0,1.0
+v0.2,0.1526406201241661,0.14401359006847594,0.1,0.85,-0.10576579647078815,0.0,1.0
