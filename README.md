@@ -26,7 +26,7 @@ The **default academic reference** is `market_col` (`MKT`) when present among fa
 
 A factor's ability to span reference alpha is an **explanatory fact**, not proof it is a stable economic risk premium, and not evidence the original alpha lacked skill. The nonlinear and tail-shape bases remain valuable **diagnostics**, but their economic premium is unidentified without a credible payoff/pricing model: it is **not economically zero just because the diagnostic basis is orthogonalized**. Such contributions are left unquantified rather than manufactured by multiplying a raw squared return by a regression loading.
 
-The **v0.5 raw-mean Shapley (`r.shapley`), waterfall, Alpha Survival Curve, core-inference and referee handoff are preserved unchanged as *secondary* views**. The legacy labels are retained for API compatibility, not as scientific claims. See [ACADEMIC_ALPHA_REALIGNMENT.md](ACADEMIC_ALPHA_REALIGNMENT.md) for the exact identities and limitations.
+The **v0.5 raw-mean Shapley (`r.shapley`), waterfall, Alpha Survival Curve, core-inference and referee handoff are preserved unchanged as *secondary* views**. The legacy labels are retained for API compatibility, not as scientific claims. 
 
 ---
 
