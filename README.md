@@ -1,4 +1,4 @@
-# Academic Alpha Slicer — v0.5.1 research-object realignment
+# Academic Alpha Slicer — v0.5.1
 
 **Primary research question: what is the original academic alpha made of?** The quantity to dissect is the intercept of a **pre-specified reference regression** (CAPM, FF3, FF5, or another explicitly supplied factor benchmark), not the total portfolio mean and not the remaining intercept alone. Conditional timing, nonlinear payoffs and tail-risk compensation **may be components of that original alpha**; explaining them does not prove absence of alpha or skill.
 
