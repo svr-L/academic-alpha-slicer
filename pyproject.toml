@@ -1,13 +1,35 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "academic-alpha-slicer"
-version = "0.5.1"
-description = "Decompose the original academic reference alpha into economic spanning mechanisms and remaining intercept, with separate risk diagnostics and robust inference."
+name = "equity-derivatives-pricing-risk-engine"
+version = "0.4.1"
+description = "Standalone Heston equity derivatives pricing, risk, IV-surface calibration and option-snapshot adapters and deterministic carry curves"
+readme = "README.md"
 requires-python = ">=3.10"
-dependencies = ["numpy>=1.26", "pandas>=2.0", "scipy>=1.11", "statsmodels>=0.14", "matplotlib>=3.8"]
+license = {text = "MIT"}
+authors = [{name = "Saverio Lauriola"}]
+dependencies = ["numpy>=1.26", "scipy>=1.11"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5", "QuantLib>=1.32"]
+marketdata = ["pandas>=2.0", "pyarrow>=14"]
 
 [tool.setuptools.packages.find]
-include = ["alpha_slicer*"]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+# An inaccurate Fourier price must never pass silently in the test suite;
+# tests that expect the warning use pytest.warns.
+filterwarnings = ["error::equity_derivatives.heston_fourier.FourierAccuracyWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
